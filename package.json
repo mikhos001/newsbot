@@ -1,0 +1,17 @@
+{
+  "name": "newsbot",
+  "version": "1.0.0",
+  "description": "A bot that generates funny news using DeepSeek API and sends it to a Telegram channel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^16.4.7",
+    "node-telegram-bot-api": "^0.53.0",
+    "openai": "^4.85.4",
+    "node-cron": "^3.0.0"
+  }
+}
