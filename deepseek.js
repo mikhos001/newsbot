@@ -9,7 +9,7 @@ const openai = new OpenAI({
 
 export async function getFunnyNews() {
   const completion = await openai.chat.completions.create({
-    messages: [{ role: "system", content: "Сгенерируй смешную новость" }],
+    messages: [{ role: "user", content: "Сгенерируй смешную новость ограничившись 200 символами" }],
     model: "deepseek-chat",
   });
   return completion.choices[0].message.content;
