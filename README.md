@@ -6,7 +6,7 @@ NewsBot is a Node.js application that generates funny news using the DeepSeek AP
 
 - Generates random funny news using the DeepSeek API.
 - Sends the generated news to a specified Telegram channel.
-- Scheduled to run every hour.
+- Scheduled to run every 2 hour 10-22.
 
 ## Prerequisites
 
@@ -58,7 +58,3 @@ npm start
 
 The bot will generate funny news and send it to the specified Telegram channel every hour.
 
-## License
-
-This project is licensed under the MIT License.
-````
