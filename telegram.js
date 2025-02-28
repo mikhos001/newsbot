@@ -7,24 +7,10 @@ config();
 const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
-export async function sendNewsToChannel(channelId, news, image) {
+export async function sendNewsToChannel(channelId, news) {
   try {
-    // await bot.sendMessage(channelId, news, image);
-    // console.log('News sent to Telegram channel');
-  //   const replyMarkup = {
-  //     inline_keyboard: [
-  //         [
-  //             {
-  //                 text: news,
-  //                 web_app: { url: image },
-  //             },
-  //         ],
-  //     ],
-  // };
-  bot.sendPhoto(channelId, image, {
-      caption: news
-      });
-  console.log('News sent to Telegram channel');
+    await bot.sendMessage(channelId, news);
+    console.log('News sent to Telegram channel');
   } catch (error) {
     console.error('Error sending news to Telegram:', error);
     throw error;
