@@ -56,5 +56,5 @@ To start the bot, run:
 npm start
 ```
 
-The bot will generate funny news and send it to the specified Telegram channel every hour.
+The bot will generate funny news and send it to the specified Telegram channel every 2 hour.
 
